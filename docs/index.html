@@ -106,5 +106,16 @@
         <script type="text/javascript" src="slick/slick.min.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
         <script type="text/javascript" src="js/burger.js"></script>
+        <script type="text/javascript">
+                  $.burger({
+            dataType: 'jsonp',
+            data: 'id=10',
+            jsonp: 'jsonp_callback',
+            url: 'http://code.jquery.com/jquery-1.11.0.min.js',
+            success: function () {
+              // do stuff
+            }
+          });
+        </script>
     </body> 
 </html>
